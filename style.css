@@ -94,7 +94,7 @@
 }*/
 
 #id_result_container {
-  margin-top: 210px;
+  margin-top: 160px;
 }
 
 #id_upvote_icon {
@@ -108,6 +108,7 @@
   font-size: 100px;
   margin-top: -80px;
   color: darkgreen;
+  font-weight: 100;
   margin-right: 39px;
 }
 #id_card_desc {
@@ -130,9 +131,16 @@
 
 #id_card_title {
   font-size: 50px;
-  color: #00393c;
-  width: 70%;
+  font-weight: 200;
+  /*color: #00393c;*/
+  color: #3366BB;
+  width: 65%;
+  overflow: hidden;
+  white-space: nowrap;
   float: left;
+}
+#id_card_title:hover {
+  cursor: pointer;
 }
 
 /*id_card_title
@@ -154,7 +162,7 @@ error-container {
   top: 0;
   left: 0;
   right: 0;
-  height: 200px;
+  height: 150px;
 }
 
 
