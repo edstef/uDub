@@ -29,11 +29,9 @@
 			  // url: 'http://104.197.125.144?repo=7',// + params.query,
 				url: 'http://104.197.125.144?repo=gfchvjk',
 				crossDomain: true,
-				always: function() {
-					console.log("ajksdnakjnsd")
-				},
 			  success: function(data, success) {
 					console.log(data)
+					// $scope.errors = data
 					$('#id_loader').hide();
 					$('#result').show();
 				}
