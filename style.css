@@ -1,6 +1,10 @@
 .background {
   /*background: #eaf9fb;*/
 }
+a:hover{
+  text-decoration: none;
+  color: #23457f !important;
+}
 #id_left_toggle:hover, #id_right_toggle:hover {
   cursor: pointer;
 }
@@ -104,7 +108,7 @@
 }*/
 
 #id_result_container {
-  margin-top: 160px;
+  margin-top: 115px;
 }
 
 #id_upvote_icon {
@@ -122,7 +126,9 @@
   margin-right: 55px;
 }
 #id_card_desc {
-  margin-top: 10px;
+  /*margin-top: 10px;*/
+  margin-left: 10px;
+  font-size:12px;
   width: 75%;
   float: left;
 }
@@ -172,11 +178,11 @@ error-container {
   top: 0;
   left: 0;
   right: 0;
-  height: 150px;
+  height: 100px;
 }
 
 #id_unanswered_container {
-  margin-top: 59px;
+  margin-top: 0px;
   margin-left: 410px;
 }
 #id_unanswered_checker {
