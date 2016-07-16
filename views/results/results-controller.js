@@ -20,13 +20,24 @@
 
 		})
 		.controller('resultsController', function($scope, queryParams) {
-			$('body').addClass("background");
 			$('#result').hide();
-			window.setTimeout(function(){
-				$('#id_loader').hide();
-				$('#result').show();
-			}, 100);
+
 			var params = queryParams.get();
+			$.ajax({
+			  type: "POST",
+				dataType:"jsonp",
+			  // url: 'http://104.197.125.144?repo=7',// + params.query,
+				url: 'http://104.197.125.144?repo=gfchvjk',
+				crossDomain: true,
+				always: function() {
+					console.log("ajksdnakjnsd")
+				},
+			  success: function(data, success) {
+					console.log(data)
+					$('#id_loader').hide();
+					$('#result').show();
+				}
+			});
 			$scope.errors = A;
 			// console.log($scope.asdf);
 

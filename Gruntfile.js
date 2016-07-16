@@ -10,7 +10,14 @@ module.exports = function(grunt) {
 					base: ".",
 					directory: null,
 					open: true,
-					keepalive: true
+					keepalive: true,
+					middleware: function(connect, options, middlewares) {
+						connect().use(function (req, res, next) {
+						  res.setHeader('Access-Control-Allow-Origin', '*');
+						  next();
+						})
+          return middlewares;
+        }
 				}
 			}
 		}
