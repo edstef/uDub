@@ -104,18 +104,18 @@
 }
 
 #id_upvote_icon {
-  margin-top: -94px;
-  font-size: 50px;
-  margin-left: -40px;
+  margin-top: -70px;
+  font-size: 35px;
+  margin-left: -32px;;
 }
 
 #id_card_votes {
   float: right;
-  font-size: 100px;
-  margin-top: -80px;
+  font-size: 75px;
+  margin-top: -68px;
   color: darkgreen;
-  font-weight: 100;
-  margin-right: 39px;
+  font-weight: 200;
+  margin-right: 55px;
 }
 #id_card_desc {
   margin-top: 10px;
@@ -413,4 +413,14 @@ input[type=checkbox] {
   100% {
     transform: scale(0,0)
   }
+}
+
+
+
+textarea:focus, input:focus{
+    outline: none;
+}
+#id_search_bar:focus {
+  border: 2px solid #00BCD4;
+  color: #00393c;
 }

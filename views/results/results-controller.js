@@ -1,4 +1,4 @@
-(function() {
+/results/results-controller.jsunction() {
 	'use strict';
 
 	angular.module('results', ['ngRoute'])
