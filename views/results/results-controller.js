@@ -19,9 +19,12 @@
 			// });
 
 		})
-		.controller('resultsController', function($scope) {
+		.controller('resultsController', function($scope, queryParams) {
+			console.log(queryParams.get())
+			var params = queryParams.get();
+
       $scope.result = {
-				"query": "https://github.com/joeyang22/job-predictor",
+				"query": params.query,
 				"errors":[
 					{
 						"name": "Shit is broken",

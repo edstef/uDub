@@ -13,7 +13,7 @@
 					controller: 'homeController'
 				});
 		})
-		.controller('homeController', function($scope) {
+		.controller('homeController', function($scope, queryParams) {
 			$scope.home = {};
 			var activeToggles = [];
 
@@ -35,7 +35,16 @@
 
 			$('#id_search_bar').keypress(function(e) {
 				if (e.keyCode === 13) {
+					queryParams.set({
+							"query" : ($('#id_search_bar').val()),
+							"user" : ($('#id_left_toggle input').prop('checked')),
+							"developer" : ($('#id_right_toggle input').prop('checked')),
+
+					});
 						location.href = 'http://localhost:9000/#/results';
+
+
+						console.log("fewnaofa");
 				}
 			});
 
