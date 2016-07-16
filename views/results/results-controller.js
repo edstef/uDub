@@ -21,17 +21,18 @@
 		})
 		.controller('resultsController', function($scope, queryParams) {
 			$('#result').hide();
-
+			$scope.errors = [];
 			var params = queryParams.get();
 			$.ajax({
 			  type: "GET",
 				dataType:"jsonp",
 			  url: 'http://104.197.125.144?repo=' + params.query,
 				crossDomain: true,
-				success: function(data){
+				success: function(data, status){
 					console.log("logging");
 					console.log(data);
-					$scope.errors = data;
+					$scope.errors = data
+					$scope.$apply();
 					for (var i = 0; i< $scope.errors.length; i ++){
 						console.log($scope.errors[i]);
 							$scope.errors[i]["items"] = $scope.errors[i]["items"].sort(function(a,b){
@@ -46,11 +47,15 @@
 					}
 					$('#id_loader').hide();
 					$('#result').show();
+
 				},
 				error: function(obj, errorText, error){
 					console.log(obj);
 					console.log(errorText);
 					console.log(error);
+					$('#id_loader').hide();
+					$('#result').show();
+					$scope.errors = [{"name":"No repositories found"}];
 				}
 			});
 			// console.log,($scope.asdf);
