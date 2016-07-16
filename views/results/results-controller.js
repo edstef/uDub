@@ -28,7 +28,7 @@
 			}, 100);
 			console.log(queryParams.get())
 			var params = queryParams.get();
-
+			console.log(A)
       $scope.result = {
 				"query": params.query,
 				"errors":[
