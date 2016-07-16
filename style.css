@@ -122,7 +122,9 @@ a:hover{
   margin-right: 55px;
 }
 #id_card_desc {
-  margin-top: 10px;
+  /*margin-top: 10px;*/
+  margin-left: 10px;
+  font-size:12px;
   width: 75%;
   float: left;
 }
