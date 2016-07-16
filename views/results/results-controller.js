@@ -1,4 +1,4 @@
-/results/results-controller.jsunction() {
+(function() {
 	'use strict';
 
 	angular.module('results', ['ngRoute'])
@@ -27,7 +27,8 @@
 				$('#result').show();
 			}, 100);
 			var params = queryParams.get();
-			};
+			$scope.errors = A;
+			// console.log($scope.asdf);
 
 			$('#id_unanswered_checker').click(function(){
 				console.log($(this).is(':checked'));

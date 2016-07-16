@@ -1,10 +1,12 @@
-<div ng-repeat = "question in error.questions" class= "card {{question.answered ? 'answered' : 'unanswered'}}">
+<div
+  ng-repeat = "question in error.items"
+  class= "card {{question.is_accepted ? 'answered' : 'unanswered'}}">
   <a ng-href = {{question.link}}>
     <div class="question" >
       <div id="id_card_title">{{question.title}}</div>
-      <div id="id_card_desc">{{question.link}}</div>
+      <div id="id_card_desc">{{question.excert}}</div>
       <div id="id_card_votes">
-        <div id="id_upvotes">{{question.votes}}</div>
+        <div id="id_upvotes">{{question.score}}</div>
         <div id="id_upvote_icon">
           <i class="fa fa-sort-asc" aria-hidden="true"></i>
         </div>
