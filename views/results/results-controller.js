@@ -34,21 +34,39 @@
 					{
 						"name": "Shit is broken",
 						"amount" : 19,
-						"sources" : {
-							"github":["http://github.com", "https://github.com/joeyang22"],
-							"stackOverflow":["http://stackoverflow.com/",
-							"http://stackoverflow.com/questions/38390468/updating-here-maps-with-traffictiles-with-leaflet-js"]
-						}
+						"questions": [
+							{
+								"title": "Error when using the thing",
+								"link" : "http://edwardmurakami.com/#/",
+								"vote" : 50,
+								"answered" : true
+							},
+							{
+								"title": "Why doesn't my thing work",
+								"link" : "http://edwardmurakami.com/#/",
+								"vote" : 513,
+								"answered" : false
+							}
+						]
 					},
 					{
-						"name": "Shit is very broken",
-						"amount" : 30,
-						"sources" : {
-							"github":["http://github.com", "https://github.com/edstef"],
-							"stackOverflow":["http://stackoverflow.com/",
-							"http://stackoverflow.com/questions/38390468/updating-here-maps-with-traffictiles-with-leaflet-js"]
-						}
-					},
+						"name": "Shit is super broken",
+						"amount" : 19,
+						"questions": [
+							{
+								"title": "Cant seem to access the thing",
+								"link" : "http://edwardmurakami.com/#/",
+								"vote" : 13,
+								"answered" : true
+							},
+							{
+								"title": "Factory factories no longer perform builders",
+								"link" : "http://edwardmurakami.com/#/",
+								"vote" : 230,
+								"answered" : true
+							}
+						]
+					}
 				]
 			};
 
