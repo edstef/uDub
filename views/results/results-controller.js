@@ -47,29 +47,51 @@
 								"link" : "http://edwardmurakami.com/#/",
 								"votes" : 513,
 								"answered" : false
-							}
-						]
-					},
-					{
-						"name": "Shit is super broken",
-						"amount" : 19,
-						"questions": [
-							{
-								"title": "Cant seem to access the thing",
-								"link" : "http://edwardmurakami.com/#/",
-								"votes" : 13,
-								"answered" : true
 							},
 							{
-								"title": "Factory factories no longer perform builders",
+								"title": "Error when using the thing",
 								"link" : "http://edwardmurakami.com/#/",
-								"votes" : 230,
+								"votes" : 240,
+								"answered" : false
+							},
+							{
+								"title": "Why doesn't my thing work",
+								"link" : "http://edwardmurakami.com/#/",
+								"votes" : 5150,
 								"answered" : true
 							}
-						]
+						],
 					}
+					// {
+					// 	"name": "Shit is super broken",
+					// 	"amount" : 19,
+					// 	"questions": [
+					// 		{
+					// 			"title": "Cant seem to access the thing",
+					// 			"link" : "http://edwardmurakami.com/#/",
+					// 			"votes" : 13,
+					// 			"answered" : true
+					// 		},
+					// 		{
+					// 			"title": "Factory factories no longer perform builders",
+					// 			"link" : "http://edwardmurakami.com/#/",
+					// 			"votes" : 230,
+					// 			"answered" : true
+					// 		}
+					// 	]
+					// }
 				]
 			};
+
+			$('#id_unanswered_checker').click(function(){
+				console.log($(this).is(':checked'));
+				if ($(this).is(':checked')) {
+					console.log($('.unanswered'));
+					$('.unanswered').hide(200);
+				} else {
+					$('.unanswered').show(200);
+				}
+			});
 
 		});
 })();
