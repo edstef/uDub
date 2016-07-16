@@ -1,1 +1,24 @@
-<p>{{a.a}}</p>
+<div class ="card" >
+
+
+<div class = "errors">
+  <h1>{{error.name}}</h1>
+  <h2>Issues found: {{error.amount}}</h2>
+  <h3>Stack Overflow Questions</h3>
+  <ul>
+    <li ng-repeat="link in error.sources.stackOverflow">
+	     <a ng-href = {{link}}>{{link}}</a>
+    </li>
+  </ul>
+  <h3>Github Issues</h3>
+
+  <ul>
+  <li ng-repeat="link in error.sources.github">
+    <a ng-href = {{link}}>
+       {{link}}
+     </a>
+  </li>
+  </ul>
+</div>
+
+</div>

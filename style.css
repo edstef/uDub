@@ -73,6 +73,22 @@
   transition: background-color 0.5s ease;
 }
 
+.card {
+  padding: 1rem;
+  background: #fff;
+  border-radius: 2px;
+  margin-top: 2rem;
+  width: 75%;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.results {
+  margin:3rem;
+}
+
+error-container {
+
+}
 
 #id_right_toggle {
   margin-left: 10px;

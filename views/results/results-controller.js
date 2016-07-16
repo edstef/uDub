@@ -20,11 +20,29 @@
 
 		})
 		.controller('resultsController', function($scope) {
-      $scope.results = {};
-      $scope.swag = [
-        {'a' : 'eh'},
-        {'a' : 'bee'}
-      ];
+      $scope.result = {
+				"query": "https://github.com/joeyang22/job-predictor",
+				"errors":[
+					{
+						"name": "Shit is broken",
+						"amount" : 19,
+						"sources" : {
+							"github":["http://github.com", "https://github.com/joeyang22"],
+							"stackOverflow":["http://stackoverflow.com/",
+							"http://stackoverflow.com/questions/38390468/updating-here-maps-with-traffictiles-with-leaflet-js"]
+						}
+					},
+					{
+						"name": "Shit is very broken",
+						"amount" : 30,
+						"sources" : {
+							"github":["http://github.com", "https://github.com/edstef"],
+							"stackOverflow":["http://stackoverflow.com/",
+							"http://stackoverflow.com/questions/38390468/updating-here-maps-with-traffictiles-with-leaflet-js"]
+						}
+					},
+				]
+			};
 
 		});
 })();
