@@ -12,7 +12,10 @@
     </div>
   </div>
   <div id="id_result_container">
-    <error-container ng-repeat = "error in errors"></error-container>
+    <div ng-repeat = "error in errors" id = "id_error_repeater">
+      <div id = "id_error_name">{{error.name}}</div>
+      <error-container ng-repeat = "question in error.items"></error-container>
+    </h1>
   </div>
   <!-- <p ng-repeat = "error in errors">wow</p> -->
 </div>

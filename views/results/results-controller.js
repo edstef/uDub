@@ -22,10 +22,10 @@
 		.controller('resultsController', function($scope, queryParams) {
 			$('body').addClass("background");
 			$('#result').hide();
-			window.setTimeout(function(){
-				$('#id_loader').hide();
-				$('#result').show();
-			}, 100);
+			 window.setTimeout(function(){
+			 	$('#id_loader').hide();
+			 	$('#result').show();
+			 }, 100);
 			var params = queryParams.get();
 			$scope.errors = A;
 			for (var i = 0; i< $scope.errors.length; i ++){

@@ -1,10 +1,4 @@
-
-<div id = "error">
-  <h1 id = "id_error_name">
-    {{error.name}}
-  </h1>
   <div
-    ng-repeat = "question in error.items"
     class= "card {{question.is_accepted ? 'answered' : 'unanswered'}}">
       <div class="question" >
           <a ng-href = "http://stackoverflow.com/questions/{{question.question_id}}">
@@ -20,4 +14,3 @@
       </div>
 
   </div>
-</div>

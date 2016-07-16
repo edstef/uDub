@@ -1,3 +1,7 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .background {
   /*background: #eaf9fb;*/
 }
@@ -12,6 +16,15 @@ a:hover{
 #id_left_toggle input, #id_right_toggle input {
   float: left;
   vertical-align: middle
+}
+
+#id_error_repeater{
+  font-size: 60px;
+
+}
+
+#id_error_name {
+  margin  : 3rem;
 }
 
 #id_title {
