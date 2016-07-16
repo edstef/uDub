@@ -31,5 +31,11 @@
 				}
 			});
 
+			$('#id_search_bar').keypress(function(e) {
+				if (e.keyCode === 13) {
+						location.href = 'http://localhost:9000/#/results';
+				}
+			});
+
 		});
 })();
