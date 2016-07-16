@@ -18,10 +18,10 @@
 			var activeToggles = [];
 
 			$('#id_left_toggle, #id_right_toggle').click(function(e) {
-				$('#id_left_toggle, #id_right_toggle').removeClass('active')
+				$('#id_left_toggle, #id_right_toggle').removeClass('active');
 				var clickedId = e.currentTarget.id;
 				if (activeToggles.includes(clickedId)) {
-					activeToggles.remove(clickedId)
+					activeToggles.remove(clickedId);
 				} else {
 					activeToggles.push(clickedId);
 				}
