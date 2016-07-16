@@ -18,17 +18,19 @@
 			var activeToggles = [];
 
 			$('#id_left_toggle, #id_right_toggle').click(function(e) {
-				$('#id_left_toggle, #id_right_toggle').removeClass('active');
-				var clickedId = e.currentTarget.id;
-				if (activeToggles.includes(clickedId)) {
-					activeToggles.remove(clickedId);
-				} else {
-					activeToggles.push(clickedId);
-				}
+				// $('#id_left_toggle, #id_right_toggle').removeClass('active');
 
-				for (var i = 0; i < activeToggles.length; i++) {
-					$('#' + activeToggles[i]).addClass('active');
-				}
+				var clickedId = e.currentTarget.id;
+				$('#' + clickedId + ' input').prop('checked', !$('#' + clickedId + ' input').prop('checked'));
+				// if (activeToggles.includes(clickedId)) {
+				// 	activeToggles.remove(clickedId);
+				// } else {
+				// 	activeToggles.push(clickedId);
+				// }
+
+				// for (var i = 0; i < activeToggles.length; i++) {
+				// 	$('#' + activeToggles[i]).addClass('active');
+				// }
 			});
 
 			$('#id_search_bar').keypress(function(e) {
