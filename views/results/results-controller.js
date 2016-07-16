@@ -38,13 +38,13 @@
 							{
 								"title": "Error when using the thing",
 								"link" : "http://edwardmurakami.com/#/",
-								"vote" : 50,
+								"votes" : 50,
 								"answered" : true
 							},
 							{
 								"title": "Why doesn't my thing work",
 								"link" : "http://edwardmurakami.com/#/",
-								"vote" : 513,
+								"votes" : 513,
 								"answered" : false
 							}
 						]
@@ -56,13 +56,13 @@
 							{
 								"title": "Cant seem to access the thing",
 								"link" : "http://edwardmurakami.com/#/",
-								"vote" : 13,
+								"votes" : 13,
 								"answered" : true
 							},
 							{
 								"title": "Factory factories no longer perform builders",
 								"link" : "http://edwardmurakami.com/#/",
-								"vote" : 230,
+								"votes" : 230,
 								"answered" : true
 							}
 						]
