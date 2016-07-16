@@ -85,7 +85,12 @@
 .results {
   margin:3rem;
 }
-
+.stats {
+  display :inline-block;
+}
+.links {
+  display: inline-block;
+}
 error-container {
 
 }

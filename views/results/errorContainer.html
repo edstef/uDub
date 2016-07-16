@@ -1,24 +1,25 @@
 <div class ="card" >
 
+  <div class = "links">
+    <h1>{{error.name}}</h1>
+    <h3>Stack Overflow Questions</h3>
+    <ul>
+      <li ng-repeat="link in error.sources.stackOverflow">
+  	     <a ng-href = {{link}}>{{link}}</a>
+      </li>
+    </ul>
+    <h3>Github Issues</h3>
 
-<div class = "errors">
-  <h1>{{error.name}}</h1>
-  <h2>Issues found: {{error.amount}}</h2>
-  <h3>Stack Overflow Questions</h3>
-  <ul>
-    <li ng-repeat="link in error.sources.stackOverflow">
-	     <a ng-href = {{link}}>{{link}}</a>
+    <ul>
+    <li ng-repeat="link in error.sources.github">
+      <a ng-href = {{link}}>
+         {{link}}
+       </a>
     </li>
-  </ul>
-  <h3>Github Issues</h3>
-
-  <ul>
-  <li ng-repeat="link in error.sources.github">
-    <a ng-href = {{link}}>
-       {{link}}
-     </a>
-  </li>
-  </ul>
-</div>
+    </ul>
+  </div>
+  <div class = "stats">
+    <h2>Issues found: {{error.amount}}</h2>
+  </div>
 
 </div>
