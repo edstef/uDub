@@ -12,19 +12,24 @@
 					templateUrl: 'views/home/home.html',
 					controller: 'homeController'
 				});
-
-			// $urlRouterProvider.otherwise("/");
-
-			// $stateProvider
-			// 	.state('/', {
-			// 	  url: "/",
-			// 	  templateUrl: 'pages/home/home.html',
-			// 	  controller: 'homeController'
-			// });
-
 		})
 		.controller('homeController', function($scope) {
 			$scope.home = {};
+			var activeToggles = [];
+
+			$('#id_left_toggle, #id_right_toggle').click(function(e) {
+				$('#id_left_toggle, #id_right_toggle').removeClass('active');
+				var clickedId = e.currentTarget.id;
+				if (activeToggles.includes(clickedId)) {
+					activeToggles.remove(clickedId);
+				} else {
+					activeToggles.push(clickedId);
+				}
+
+				for (var i = 0; i < activeToggles.length; i++) {
+					$('#' + activeToggles[i]).addClass('active');
+				}
+			});
 
 		});
 })();
