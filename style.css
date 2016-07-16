@@ -1,3 +1,7 @@
-.body {
-  background: red
+#id_left_toggle:hover, #id_right_toggle:hover {
+  cursor: pointer;
+}
+
+.active {
+  background: red;
 }
