@@ -1,25 +1,13 @@
-<div class ="card" >
-
-  <div class = "links">
-    <h1>{{error.name}}</h1>
-    <h3>Stack Overflow Questions</h3>
-    <ul>
-      <li ng-repeat="link in error.sources.stackOverflow">
-  	     <a ng-href = {{link}}>{{link}}</a>
-      </li>
-    </ul>
-    <h3>Github Issues</h3>
-
-    <ul>
-    <li ng-repeat="link in error.sources.github">
-      <a ng-href = {{link}}>
-         {{link}}
-       </a>
-    </li>
-    </ul>
+<div class="card" ng-href={{link}}>
+  <!-- <a></a> -->
+  <div id="id_card_title">{{error.name}}</div>
+  <div id="id_card_desc">Hello my name is Joe yang. I am Joe Yang. My name is Joe Yang but you can call me Joe Yang</div>
+  <div id="id_card_votes">
+    <div id="id_upvotes">99</div>
+    <div id="id_upvote_icon">
+      <!-- <i class="fa fa-chevron-up" aria-hidden="true"></i> -->
+      <i class="fa fa-sort-asc" aria-hidden="true"></i>
+    </div>
+    <!-- <div></div> -->
   </div>
-  <div class = "stats">
-    <h2>Issues found: {{error.amount}}</h2>
-  </div>
-
 </div>

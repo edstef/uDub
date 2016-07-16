@@ -4,5 +4,7 @@
 
 <div id = "result" class = "results">
   <h1> Showing Results for <span style = "color: #00BCD4"> {{result.query}} </span> </h1>
-  <error-container title="jnjn" ng-repeat = "error in result.errors"></error-container>
+  <div id="id_result_container">
+    <error-container title="jnjn" ng-repeat = "error in result.errors"></error-container>
+  </div>
 </div>
