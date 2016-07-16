@@ -28,6 +28,18 @@
 			}, 100);
 			var params = queryParams.get();
 			$scope.errors = A;
+			for (var i = 0; i< $scope.errors.length; i ++){
+				console.log($scope.errors[i]);
+				 	$scope.errors[i]["items"] = $scope.errors[i]["items"].sort(function(a,b){
+					if (a["score"] > b["score"]){
+						return -1;
+					} else if (a["score"] == b["score"]){
+						return 0;
+					} else {
+						return 1;
+					}
+				});
+			}
 			// console.log($scope.asdf);
 
 			$('#id_unanswered_checker').click(function(){

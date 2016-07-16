@@ -68,8 +68,12 @@
 #id_toggle_container {
   position: fixed;
   left: calc(50% - 170px);
-  widht: 210px;
+  width: 210px;
   margin-top: 57px;
+}
+
+#id_error_name {
+  width: 100%;
 }
 
 .toggleButton {
