@@ -236,7 +236,7 @@ input[type=checkbox] {
   display: block;
   height: 30px;
   width: 30px;
-  border: 2px solid #fff;
+  border: 2px solid black;
   border-radius: 50%;
   border-left-color: transparent;
   border-right-color: transparent;
@@ -256,8 +256,8 @@ input[type=checkbox] {
   margin-top: -12px;
   border-top-color: transparent;
   border-bottom-color: transparent;
-  border-left-color: #fff;
-  border-right-color: #fff;
+  border-left-color: black;
+  border-right-color: black;
   -webkit-animation: linear inner .5s infinite;
   animation: linear inner .5s infinite;
 }

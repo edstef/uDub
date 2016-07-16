@@ -20,6 +20,11 @@
 
 		})
 		.controller('resultsController', function($scope, queryParams) {
+			$('#result').hide();
+			window.setTimeout(function(){
+				$('#id_loader').hide();
+				$('#result').show();
+			}, 100);
 			console.log(queryParams.get())
 			var params = queryParams.get();
 

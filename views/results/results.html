@@ -1,4 +1,8 @@
-<div class = "results">
-  <h1> Showing Results for {{result.query}}</h1>
+<div id="id_loader" >
+  <span id="id_loader_span"></span>
+</div>
+
+<div id = "result" class = "results">
+  <h1> Showing Results for <span style = "color: #00BCD4"> {{result.query}} </span> </h1>
   <error-container title="jnjn" ng-repeat = "error in result.errors"></error-container>
 </div>
