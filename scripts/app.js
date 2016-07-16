@@ -2,6 +2,8 @@
 	'use strict';
 
 	angular.module('uDub', [
-    'home'
+    'home',
+		'results',
+		'errorContainer'
 	]);
 })();
