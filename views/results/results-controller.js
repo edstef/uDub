@@ -23,14 +23,14 @@
 			$('#result').hide();
 			$scope.errors = [];
 			var params = queryParams.get();
+			$scope.query = params["query"];
+			console.log($scope.query);
 			$.ajax({
 			  type: "GET",
 				dataType:"jsonp",
 			  url: 'http://104.197.125.144?repo=' + params.query,
 				crossDomain: true,
 				success: function(data, status){
-					console.log("logging");
-					console.log(data);
 					$scope.errors = data
 					$scope.$apply();
 					for (var i = 0; i< $scope.errors.length; i ++){

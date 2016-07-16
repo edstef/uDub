@@ -37,7 +37,7 @@ a:hover{
 
   /*top: calc (50% - 171px);*/
   /*top: 30%;*/
-  left: calc(50% - 169.5px);
+  left:calc(50% - 280.5px);
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none;   /* Chrome/Safari/Opera */
   -khtml-user-select: none;    /* Konqueror */
@@ -56,7 +56,7 @@ a:hover{
 }
 #id_title span {
   color: #00393c;
-  font-size: 150px;
+
   font-family: 'Noto Sans', sans-serif;
   margin-left: -15px;
 
