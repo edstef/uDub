@@ -3,7 +3,7 @@
   class= "card {{question.is_accepted ? 'answered' : 'unanswered'}}">
   <a ng-href = {{question.link}}>
     <div class="question" >
-      <div id="id_card_title">{{question.title}}</div>
+      <a ng-href = {{question.link}} id="id_card_title">{{question.title}}</a>
       <div id="id_card_desc">{{question.excerpt}}</div>
       <div id="id_card_votes">
         <div id="id_upvotes">{{question.score}}</div>
