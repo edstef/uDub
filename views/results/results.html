@@ -3,7 +3,11 @@
 </div>
 
 <div id = "result" class = "results">
-  <h1> Showing Results for <span style = "color: #00BCD4"> {{result.query}} </span> </h1>
+  <div id="id_upper_part">
+    <h1> Showing Results for <span style = "color: #00BCD4"> {{result.query}} </span> </h1>
+    <!-- <input> -->
+    <input id="id_unanswered_checker" type="checkbox" style="visibility: visible"/>
+  </div>
   <div id="id_result_container">
     <error-container title="jnjn" ng-repeat = "error in result.errors"></error-container>
   </div>

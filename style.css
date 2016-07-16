@@ -1,3 +1,6 @@
+.background {
+  /*background: #eaf9fb;*/
+}
 #id_left_toggle:hover, #id_right_toggle:hover {
   cursor: pointer;
 }
@@ -91,7 +94,7 @@
 }*/
 
 #id_result_container {
-  margin-top: 5%;
+  margin-top: 210px;
 }
 
 #id_upvote_icon {
@@ -117,6 +120,7 @@
   /*padding: 1rem;*/
   padding-left: 15px;
   background: #fff;
+  margin-bottom: 5px;
   /*border: 1px solid black;*/
   border-bottom: 1px solid gray;
   width: 75%;
@@ -126,6 +130,7 @@
 
 #id_card_title {
   font-size: 50px;
+  color: #00393c;
   width: 70%;
   float: left;
 }
@@ -142,6 +147,15 @@ error-container {
 
 
 
+#id_upper_part {
+  background: #00393c;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+}
 
 
 

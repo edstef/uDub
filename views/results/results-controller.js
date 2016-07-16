@@ -20,6 +20,7 @@
 
 		})
 		.controller('resultsController', function($scope, queryParams) {
+			$('body').addClass("background");
 			$('#result').hide();
 			window.setTimeout(function(){
 				$('#id_loader').hide();
